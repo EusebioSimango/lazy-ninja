@@ -20,7 +20,7 @@ For contributors or those who want the latest code, install from source:
 ```bash
 git clone https://github.com/AghastyGD/lazy-ninja.git
 cd lazy-ninja
-uv --dev -r requirements.dev.txt
+uv sync --dev
 uv pip install -e .
 ```
 
