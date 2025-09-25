@@ -9,19 +9,46 @@ By leveraging Django Ninja, Lazy Ninja provides automatic, interactive API docum
 
 ## Installation
 
+Install Lazy Ninja using uv:
+
+```bash
+uv add lazy-ninja
+```
+
 Install Lazy Ninja via pip:
 
 ```bash
 pip install lazy-ninja
 ```
 
-For contributors or those who want the latest code, install from source:
+### For contributors or those who want the latest code, install from source:
+
+You need to have [uv](https://docs.astral.sh/uv/) installed, you can see installation process [here](https://docs.astral.sh/uv/getting-started/installation/)
+
+Clone the repository:
 
 ```bash
 git clone https://github.com/AghastyGD/lazy-ninja.git
 cd lazy-ninja
-pip install -r requirements.dev.txt
-pip install -e .
+```
+
+Install dev dependencies:
+
+```bash
+uv sync --dev
+uv pip install -e .
+```
+
+To add new dependencies:
+
+```bash
+uv add <package-name>
+```
+
+for dev dependencies:
+
+```bash
+uv add --dev <package-name>
 ```
 
 ---
