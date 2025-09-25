@@ -20,8 +20,8 @@ For contributors or those who want the latest code, install from source:
 ```bash
 git clone https://github.com/AghastyGD/lazy-ninja.git
 cd lazy-ninja
-pip install -r requirements.dev.txt
-pip install -e .
+uv --dev -r requirements.dev.txt
+uv pip install -e .
 ```
 
 ---
